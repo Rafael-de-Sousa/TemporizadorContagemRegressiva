@@ -21,6 +21,9 @@ namespace TemporizadorContagemRegressiva
         {
             DateTime DataHora = DateTime.Now;
             lblDias.Text = DataHora.Day.ToString();
+            lblHoras.Text = DataHora.Hour.ToString();
+            lblMinutos.Text = DataHora.Minute.ToString();
+            lblSegundos.Text = DataHora.Second.ToString();
         }
     }
 }
