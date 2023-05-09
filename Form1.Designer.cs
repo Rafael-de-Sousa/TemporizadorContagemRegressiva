@@ -38,7 +38,7 @@ namespace TemporizadorContagemRegressiva
             this.txtHora = new System.Windows.Forms.TextBox();
             this.btnIniciar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.lblNome = new System.Windows.Forms.Label();
+            this.lblDias = new System.Windows.Forms.Label();
             this.lblHoras = new System.Windows.Forms.Label();
             this.lblMinutos = new System.Windows.Forms.Label();
             this.lblSegundos = new System.Windows.Forms.Label();
@@ -120,6 +120,7 @@ namespace TemporizadorContagemRegressiva
             this.btnIniciar.TabIndex = 7;
             this.btnIniciar.Text = "INICIAR";
             this.btnIniciar.UseVisualStyleBackColor = false;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // label5
             // 
@@ -131,16 +132,16 @@ namespace TemporizadorContagemRegressiva
             this.label5.TabIndex = 8;
             this.label5.Text = "Faltam";
             // 
-            // lblNome
+            // lblDias
             // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNome.Location = new System.Drawing.Point(269, 316);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(38, 17);
-            this.lblNome.TabIndex = 9;
-            this.lblNome.Text = "Dias";
-            this.lblNome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDias.AutoSize = true;
+            this.lblDias.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDias.Location = new System.Drawing.Point(269, 316);
+            this.lblDias.Name = "lblDias";
+            this.lblDias.Size = new System.Drawing.Size(38, 17);
+            this.lblDias.TabIndex = 9;
+            this.lblDias.Text = "Dias";
+            this.lblDias.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblHoras
             // 
@@ -184,7 +185,7 @@ namespace TemporizadorContagemRegressiva
             this.Controls.Add(this.lblSegundos);
             this.Controls.Add(this.lblMinutos);
             this.Controls.Add(this.lblHoras);
-            this.Controls.Add(this.lblNome);
+            this.Controls.Add(this.lblDias);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.txtHora);
@@ -212,7 +213,7 @@ namespace TemporizadorContagemRegressiva
         private System.Windows.Forms.TextBox txtHora;
         private System.Windows.Forms.Button btnIniciar;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Label lblDias;
         private System.Windows.Forms.Label lblHoras;
         private System.Windows.Forms.Label lblMinutos;
         private System.Windows.Forms.Label lblSegundos;

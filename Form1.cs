@@ -17,5 +17,10 @@ namespace TemporizadorContagemRegressiva
             InitializeComponent();
         }
 
+        private void btnIniciar_Click(object sender, EventArgs e)
+        {
+            DateTime DataHora = DateTime.Now;
+            lblDias.Text = DataHora.Day.ToString();
+        }
     }
 }
