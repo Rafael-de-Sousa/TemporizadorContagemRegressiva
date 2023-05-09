@@ -19,11 +19,12 @@ namespace TemporizadorContagemRegressiva
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-            DateTime DataHora = DateTime.Now;
-            lblDias.Text = DataHora.Day.ToString();
-            lblHoras.Text = DataHora.Hour.ToString();
-            lblMinutos.Text = DataHora.Minute.ToString();
-            lblSegundos.Text = DataHora.Second.ToString();
+            string[] dataTexto = new string[3];
+            dataTexto = txtData.Text.Split('/');
+            lblDias.Text = dataTexto[0] + " dias";
+            lblHoras.Text = dataTexto[1] + " horas";
+            lblMinutos.Text = dataTexto[2] + " minutos";
+            //lblSegundos.Text = data.Second.ToString();
         }
     }
 }
