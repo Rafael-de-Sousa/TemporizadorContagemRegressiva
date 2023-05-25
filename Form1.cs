@@ -26,5 +26,10 @@ namespace TemporizadorContagemRegressiva
             lblMinutos.Text = dataTexto[2] + " minutos";
             //lblSegundos.Text = data.Second.ToString();
         }
+
+        private void txtData_Click(object sender, EventArgs e)
+        {
+            txtData.Text = " ";
+        }
     }
 }

@@ -100,6 +100,7 @@ namespace TemporizadorContagemRegressiva
             this.txtData.Size = new System.Drawing.Size(136, 24);
             this.txtData.TabIndex = 5;
             this.txtData.Text = "00/00/0000";
+            this.txtData.Click += new System.EventHandler(this.txtData_Click);
             // 
             // txtHora
             // 
@@ -196,6 +197,7 @@ namespace TemporizadorContagemRegressiva
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Temporizador";
             this.ResumeLayout(false);
             this.PerformLayout();
