@@ -42,6 +42,8 @@ namespace TemporizadorContagemRegressiva
             this.lblHoras = new System.Windows.Forms.Label();
             this.lblMinutos = new System.Windows.Forms.Label();
             this.lblSegundos = new System.Windows.Forms.Label();
+            this.txtDataAtual = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -110,12 +112,13 @@ namespace TemporizadorContagemRegressiva
             this.txtHora.Size = new System.Drawing.Size(136, 24);
             this.txtHora.TabIndex = 6;
             this.txtHora.Text = "00:00:00";
+            this.txtHora.Click += new System.EventHandler(this.txtHora_Click);
             // 
             // btnIniciar
             // 
             this.btnIniciar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnIniciar.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnIniciar.Location = new System.Drawing.Point(232, 204);
+            this.btnIniciar.Location = new System.Drawing.Point(235, 226);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(254, 65);
             this.btnIniciar.TabIndex = 7;
@@ -177,12 +180,33 @@ namespace TemporizadorContagemRegressiva
             this.lblSegundos.Text = "Segundos";
             this.lblSegundos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // txtDataAtual
+            // 
+            this.txtDataAtual.Font = new System.Drawing.Font("Snap ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDataAtual.Location = new System.Drawing.Point(365, 189);
+            this.txtDataAtual.Name = "txtDataAtual";
+            this.txtDataAtual.Size = new System.Drawing.Size(181, 24);
+            this.txtDataAtual.TabIndex = 14;
+            this.txtDataAtual.Text = "00/00/0000";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(366, 159);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(135, 27);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Data Atual";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(716, 409);
+            this.Controls.Add(this.txtDataAtual);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.lblSegundos);
             this.Controls.Add(this.lblMinutos);
             this.Controls.Add(this.lblHoras);
@@ -219,6 +243,8 @@ namespace TemporizadorContagemRegressiva
         private System.Windows.Forms.Label lblHoras;
         private System.Windows.Forms.Label lblMinutos;
         private System.Windows.Forms.Label lblSegundos;
+        private System.Windows.Forms.TextBox txtDataAtual;
+        private System.Windows.Forms.Label label6;
     }
 }
 
