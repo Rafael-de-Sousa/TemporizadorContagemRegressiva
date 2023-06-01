@@ -35,7 +35,7 @@ namespace TemporizadorContagemRegressiva
             this.label4 = new System.Windows.Forms.Label();
             this.txtNomeEvento = new System.Windows.Forms.TextBox();
             this.txtData = new System.Windows.Forms.TextBox();
-            this.txtHora = new System.Windows.Forms.TextBox();
+            this.txtHoraEvento = new System.Windows.Forms.TextBox();
             this.btnIniciar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.lblDias = new System.Windows.Forms.Label();
@@ -104,15 +104,15 @@ namespace TemporizadorContagemRegressiva
             this.txtData.Text = "00/00/0000";
             this.txtData.Click += new System.EventHandler(this.txtData_Click);
             // 
-            // txtHora
+            // txtHoraEvento
             // 
-            this.txtHora.Font = new System.Drawing.Font("Snap ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtHora.Location = new System.Drawing.Point(534, 132);
-            this.txtHora.Name = "txtHora";
-            this.txtHora.Size = new System.Drawing.Size(136, 24);
-            this.txtHora.TabIndex = 6;
-            this.txtHora.Text = "00:00:00";
-            this.txtHora.Click += new System.EventHandler(this.txtHora_Click);
+            this.txtHoraEvento.Font = new System.Drawing.Font("Snap ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtHoraEvento.Location = new System.Drawing.Point(534, 132);
+            this.txtHoraEvento.Name = "txtHoraEvento";
+            this.txtHoraEvento.Size = new System.Drawing.Size(136, 24);
+            this.txtHoraEvento.TabIndex = 6;
+            this.txtHoraEvento.Text = "00:00:00";
+            this.txtHoraEvento.Click += new System.EventHandler(this.txtHora_Click);
             // 
             // btnIniciar
             // 
@@ -213,7 +213,7 @@ namespace TemporizadorContagemRegressiva
             this.Controls.Add(this.lblDias);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnIniciar);
-            this.Controls.Add(this.txtHora);
+            this.Controls.Add(this.txtHoraEvento);
             this.Controls.Add(this.txtData);
             this.Controls.Add(this.txtNomeEvento);
             this.Controls.Add(this.label4);
@@ -236,7 +236,7 @@ namespace TemporizadorContagemRegressiva
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtNomeEvento;
         private System.Windows.Forms.TextBox txtData;
-        private System.Windows.Forms.TextBox txtHora;
+        private System.Windows.Forms.TextBox txtHoraEvento;
         private System.Windows.Forms.Button btnIniciar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblDias;

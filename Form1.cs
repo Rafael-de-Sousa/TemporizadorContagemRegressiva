@@ -27,12 +27,21 @@ namespace TemporizadorContagemRegressiva
             //lblSegundos.Text = data.Second.ToString();
             DateTime dataAtual = DateTime.Now;
             DateTime dataEvento = new DateTime();
+            DateTime horaEvento = new DateTime();
+
             txtDataAtual.Text = dataAtual.ToString();
-            dataEvento = DateTime.Parse(txtData.Text.ToString());
+            dataEvento = DateTime.Parse(txtData.Text);
+            horaEvento = DateTime.Parse(txtHoraEvento.Text);
 
             var quantosDias = dataEvento.Subtract(dataAtual);
             string[] dias = quantosDias.ToString().Split('.');
             lblDias.Text = dias[0].ToString() + " Dias";
+
+            var horas = horaEvento.Subtract(dataAtual);
+            string[] hora = horas.ToString().Split(':');
+            lblHoras.Text = hora[0].ToString() + " Horas";
+            lblMinutos.Text = hora[1].ToString() + " Minutos";
+            lblSegundos.Text = hora[2].ToString().Remove(2) + " Segundos";
         }
 
         private void txtData_Click(object sender, EventArgs e)
@@ -41,7 +50,7 @@ namespace TemporizadorContagemRegressiva
         }
         private void txtHora_Click(object sender, EventArgs e)
         {
-            txtHora.Text = " ";
+            txtHoraEvento.Text = " ";
         }
     }
 }
